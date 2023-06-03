@@ -1,0 +1,36 @@
+{
+  "name": "cardgameyoubet",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "autoprefixer": "10.2.1",
+    "axios": "0.27.2",
+    "framer-motion": "6.3.16",
+    "postcss-cli": "8.3.1",
+    "react": "18.0.0",
+    "react-access-router": "2.0.12",
+    "react-dom": "18.0.0",
+    "react-scripts": "3.3.0",
+    "tailwindcss": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
+    "typescript": "3.7.5"
+  },
+  "scripts": {
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
